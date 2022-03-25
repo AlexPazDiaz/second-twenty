@@ -3,8 +3,9 @@ function urname() {
     return name
 }
 var name = greet(urname())
-function greet(a) {
+    function greet(a) {
     alert(`Hello, ${a}!`)
+
 }
 
 function ran_num() {
@@ -15,9 +16,10 @@ function ran_num() {
 function ran_user() {
     var scorep = 0
     var draw = "y"
+    alert("It's your turn first!")
     do {
         var num = ran_num() 
-        scorep = scorep + num
+        scorep = scorep + num       
         alert(`You drew an ${num}, your number is now ${scorep}`)
         var draw = prompt(`Would you like to draw? y/n`)
     } while ((draw == "y") && (scorep < 20))
@@ -27,6 +29,7 @@ function ran_user() {
 
 function ran_comp() {
     var scorec = 0
+    alert("It's now the computer's turn!")
     do {
         var num = ran_num()
         scorec = scorec + num
